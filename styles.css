@@ -58,6 +58,7 @@ header img {
   color: var(--soft-orange);
 }
 .header__title-container .header__button {
+  display: flex;
   position: absolute;
   left: calc(50% - 118px);
   top: 270px;
@@ -75,7 +76,6 @@ header img {
   text-decoration: none;
   color: var(--warm-black);
 }
-
 main {
   width: 100%;
   min-width: 320px;
@@ -234,7 +234,7 @@ table {
   width: 100%;
   min-height: 320px;
   height: auto;
-  padding: 20px 10px;
+  padding: 20px 10px 80px;
   background: var(--warm-black);
 }
 .product-detail__logo {
@@ -276,9 +276,13 @@ table {
 }
 .product-detail__card {
   width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
   min-width: 288px;
   max-width: 400px;
-  height: auto;
+  height: 180px;
   margin: 16px auto;
   padding: 16px;
   background: var(--Warm-Black-1);
@@ -307,14 +311,14 @@ table {
   background-image: url("./assets/icons/check-circle.svg");
 }
 .card__title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 1.8rem;
+  line-height: 2rem;
   margin-bottom: 10px;
   color: var(--just-white);
 }
 .card__detail {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: #808080;
